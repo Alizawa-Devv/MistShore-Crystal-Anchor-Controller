@@ -1,0 +1,22 @@
+name: MistShoreSMPCA
+version: '${version}'
+main: net.mistshore.smpca.MistShoreSMPCAPlugin
+api-version: '1.21.11'
+author: Alizawa
+description: '关注Alizawa的B站并游玩MistShore.net'
+folia-supported: true
+
+commands:
+  mistshoresmpca:
+    description: 查看状态或热重载 MistShoreSMPCA
+    usage: /<command> [reload|status]
+    aliases: [mssmpca, msca]
+    permission: mistshoresmpca.use
+
+permissions:
+  mistshoresmpca.use:
+    description: 允许查看 MistShoreSMPCA 状态
+    default: op
+  mistshoresmpca.reload:
+    description: 允许热重载 MistShoreSMPCA 配置
+    default: op
